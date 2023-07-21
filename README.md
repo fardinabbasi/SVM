@@ -82,3 +82,5 @@ The "**decision_function_shape**" parameter is set accordingly. Here are the cla
 | --- | --- | --- | --- |
 | Confusion Matrix | <img src="/readme_images/oo_linear_c.png"> | <img src="/readme_images/oo_poly_c.png"> | <img src="/readme_images/oo_rbf_c.png"> |
 | Classification Report | <img src="/readme_images/oo_linear_r.jpg"> | <img src="/readme_images/oo_poly_r.jpg"> | <img src="/readme_images/oo_rbf_r.jpg"> |
+
+In this particular problem, the One Vs. One method exhibits slightly better classification performance.
