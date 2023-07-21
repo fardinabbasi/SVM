@@ -1,6 +1,8 @@
 # Support Vector Machine
 ## SVC
 Performing **Support Vector Classification (SVC)** on the [iris dataset](https://scikit-learn.org/stable/modules/generated/sklearn.datasets.load_iris.html), which comprises **three classes** of flower types: 'setosa', 'versicolor', and 'virginica', each containing 50 samples. The dataset consists of **four features**: Sepal Length, Sepal Width, Petal Length, and Petal Width.
+### Preprocessing
+The dataset has been divided into a **training set** and a **test set**.
 ### Linear Kernel
 The linear kernel should be employed when the datapoints are **linearly separable**, given its lower number of **parameters** to learn, resulting in **faster computation**, making it particularly well-suited for **high-dimensional datasets**.
 
