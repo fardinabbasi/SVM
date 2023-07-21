@@ -13,6 +13,7 @@ Below are the classification results using the **linear kernel**, first with the
 
 Based on the results obtained using the petal length & petal width features, where datapoints exhibit linear separability, the classification performance is notably impressive.
 ### Poly and RBF Kernel
+Below are the classification results using the **poly and RBF kernel** with all 4 features.
 | Result | Kernel = Poly | Kernel = RBF |
 | --- | --- | --- |
 | Confusion Matrix | <img src="/readme_images/poly_c.png"> | <img src="/readme_images/rbf_c.png"> |
