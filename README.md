@@ -1,6 +1,6 @@
 # Support Vector Machine
 ## SVC
-Performing **Support Vector Classification (SVC)** on the [iris](https://scikit-learn.org/stable/modules/generated/sklearn.datasets.load_iris.html) dataset, which comprises **three classes** of flower types: 'setosa', 'versicolor', and 'virginica', each containing 50 samples. The dataset consists of **four features**: Sepal Length, Sepal Width, Petal Length, and Petal Width.
+Performing **Support Vector Classification (SVC)** on the [iris dataset](https://scikit-learn.org/stable/modules/generated/sklearn.datasets.load_iris.html), which comprises **three classes** of flower types: 'setosa', 'versicolor', and 'virginica', each containing 50 samples. The dataset consists of **four features**: Sepal Length, Sepal Width, Petal Length, and Petal Width.
 ### Linear Kernel
 The linear kernel should be employed when the datapoints are **linearly separable**, given its lower number of **parameters** to learn, resulting in **faster computation**, making it particularly well-suited for **high-dimensional datasets**.
 
@@ -20,6 +20,7 @@ Below are the classification results using the **poly and RBF kernel** with all 
 | Classification Report | <img src="/readme_images/rbf_r.jpg"> | <img src="/readme_images/rbf_r.jpg"> |
 
 ## Hyperparameter Tuning
+
 ```ruby
 from sklearn.model_selection import GridSearchCV
 ```
@@ -36,6 +37,13 @@ for kernel in kernels:
 	print("Optimal hyperparameters for Kernel = "+str(kernel)+ ":"+str(best_param[kernel]))
 	print("Accuracy on test set for Kernel = "+str(kernel)+ ":" +str(grid_search.score(X_test, y_test)*100)+"%\n")
 ```
+
+*Optimal hyperparameters for Kernel = linear:{'C': 1, 'gamma': 0.1}*
+
+*Optimal hyperparameters for Kernel = poly:{'C': 0.1, 'gamma': 0.1}*
+
+*Optimal hyperparameters for Kernel = rbf:{'C': 100, 'gamma': 0.01}*
+
 ### One Vs. Rest
 | Result | Kernel = Linear | Kernel = Poly | Kernel = RBF |
 | --- | --- | --- | --- |
