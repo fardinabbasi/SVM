@@ -1,11 +1,18 @@
-# SVM
+# Support Vector Machine
+## SVC
+Performing **Support Vector Classification (SVC)** on the [iris](https://scikit-learn.org/stable/modules/generated/sklearn.datasets.load_iris.html) dataset, which comprises **three classes** of flower types: 'setosa', 'versicolor', and 'virginica', each containing 50 samples. The dataset consists of **four features**: Sepal Length, Sepal Width, Petal Length, and Petal Width.
+### Linear Kernel
+The linear kernel should be employed when the datapoints are **linearly separable**, given its lower number of **parameters** to learn, resulting in **faster computation**, making it particularly well-suited for **high-dimensional datasets**.
 
+Below are the classification results using the **linear kernel**, first with the features Sepal Length & Sepal Width, and then with the features Petal Length & Petal Width
 | Result | Sepal Length & Sepal Width | Petal Length & Petal Width |
 | --- | --- | --- |
 | Decision Regions | <img src="/readme_images/s_p.png"> | <img src="/readme_images/p_p.png"> |
 | Confusion Matrix | <img src="/readme_images/s_c.png"> | <img src="/readme_images/p_c.png"> |
 | Classification Report | <img src="/readme_images/s_r.jpg"> | <img src="/readme_images/p_r.jpg"> |
 
+Based on the results obtained using the petal length & petal width features, where datapoints exhibit linear separability, the classification performance is notably impressive.
+### Poly and RBF Kernel
 | Result | Kernel = Poly | Kernel = RBF |
 | --- | --- | --- |
 | Confusion Matrix | <img src="/readme_images/poly_c.png"> | <img src="/readme_images/rbf_c.png"> |
