@@ -70,7 +70,7 @@ for kernel in kernels:
 *Optimal hyperparameters for Kernel = rbf:{'C': 100, 'gamma': 0.01}*
 
 Since the dataset is multi-class, two methods, namely **One Vs. Rest** and **One Vs. One**, are employed to classify the data. 
-The "**decision_function_shape**" parameter is set accordingly. Here are the classification results obtained for each method
+The "[decision_function_shape](https://scikit-learn.org/stable/modules/generated/sklearn.svm.SVC.html)" parameter is set accordingly. Here are the classification results obtained for each method
 ### One Vs. Rest
 | Result | Kernel = Linear | Kernel = Poly | Kernel = RBF |
 | --- | --- | --- | --- |
