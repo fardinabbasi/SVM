@@ -4,7 +4,7 @@ Performing **Support Vector Classification (SVC)** on the [iris dataset](https:/
 ### Linear Kernel
 The linear kernel should be employed when the datapoints are **linearly separable**, given its lower number of **parameters** to learn, resulting in **faster computation**, making it particularly well-suited for **high-dimensional datasets**.
 
-Below are the classification results using the **linear kernel**, first with the features Sepal Length & Sepal Width, and then with the features Petal Length & Petal Width
+Below are the classification results using the **linear kernel**, first with the features Sepal Length & Sepal Width, and then with the features Petal Length & Petal Width.
 | Result | Sepal Length & Sepal Width | Petal Length & Petal Width |
 | --- | --- | --- |
 | Decision Regions | <img src="/readme_images/s_p.png"> | <img src="/readme_images/p_p.png"> |
@@ -13,6 +13,14 @@ Below are the classification results using the **linear kernel**, first with the
 
 Based on the results obtained using the petal length & petal width features, where datapoints exhibit linear separability, the classification performance is notably impressive.
 ### Poly and RBF Kernel
+1. **RBF Kernel**: RBF kernel is the most **generalized** form of kernelization and is one of the most **widely used** kernels due to its similarity to the **Gaussian distribution**. [Read More](https://towardsdatascience.com/radial-basis-function-rbf-kernel-the-go-to-kernel-acf0d22c798a)
+
+	The RBF kernel function for two points $X_1$ and $X_2$ computes the **similarity** or how close they are to each other. This kernel can be mathematically represented as follows:
+
+$$K(X_1, X_2) = \exp\left(-\frac{\|X_1 - X_2\|^2}{2\sigma^2}\right)$$
+2. **Polynomial Kernel**: In general, the polynomial kernel is defined as:
+
+$$K(X_1, X_2) = (X_1^TX_2+a)^b$$
 Below are the classification results using the **poly and RBF kernel** with all 4 features.
 | Result | Kernel = Poly | Kernel = RBF |
 | --- | --- | --- |
