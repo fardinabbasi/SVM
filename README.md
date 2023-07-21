@@ -11,7 +11,7 @@ Below are the classification results using the **linear kernel**, first with the
 | Confusion Matrix | <img src="/readme_images/s_c.png"> | <img src="/readme_images/p_c.png"> |
 | Classification Report | <img src="/readme_images/s_r.jpg"> | <img src="/readme_images/p_r.jpg"> |
 
-Based on the results obtained using the petal length & petal width features, where datapoints exhibit linear separability, the classification performance is notably impressive.
+Based on the results obtained using the petal length & petal width features, where datapoints exhibit **linear separability**, the classification performance is notably impressive.
 ### Poly and RBF Kernel
 1. **RBF Kernel**: RBF kernel is the most **generalized** form of kernelization and is one of the most **widely used** kernels due to its similarity to the **Gaussian distribution**. [Read More](https://towardsdatascience.com/radial-basis-function-rbf-kernel-the-go-to-kernel-acf0d22c798a)
 
