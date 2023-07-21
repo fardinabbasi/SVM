@@ -43,9 +43,9 @@ $$
 \end{align*}
 $$
 
-**C** is a **hyperparameter** which determines the **trade-off** between lower error or higher margin.
+**C** is a **hyperparameter** which determines the **trade-off** between lower error or higher **margin**.
 
-To determine the optimal 'C' value for each kernel and the best 'gamma' value for the RBF kernel, GridSearchCV is utilized as shown below.
+To determine the **optimal** 'C' value for each kernel and the best 'gamma' value for the RBF kernel, **GridSearchCV** is utilized as shown below.
 ```ruby
 from sklearn.model_selection import GridSearchCV
 ```
