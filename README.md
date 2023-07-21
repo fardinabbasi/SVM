@@ -28,7 +28,24 @@ Below are the classification results using the **poly and RBF kernel** with all 
 | Classification Report | <img src="/readme_images/rbf_r.jpg"> | <img src="/readme_images/rbf_r.jpg"> |
 
 ## Hyperparameter Tuning
+The optimization function for **Soft SVM** is written as follows:
 
+$$
+\min_{w, b, \xi} \frac{1}{2}\|w\|^2 + C\sum_{i=1}^{n}\xi_i
+$$
+
+subject to:
+
+$$
+\begin{align*}
+& y_i(w^T x_i + b) \geq 1 - \xi_i, \quad i = 1, 2, \ldots, n \\
+& \xi_i \geq 0, \quad i = 1, 2, \ldots, n
+\end{align*}
+$$
+
+**C** is a **hyperparameter** which determines the **trade-off** between lower error or higher margin.
+
+To determine the optimal 'C' value for each kernel and the best 'gamma' value for the RBF kernel, GridSearchCV is utilized as shown below.
 ```ruby
 from sklearn.model_selection import GridSearchCV
 ```
@@ -52,6 +69,8 @@ for kernel in kernels:
 
 *Optimal hyperparameters for Kernel = rbf:{'C': 100, 'gamma': 0.01}*
 
+Since the dataset is multi-class, two methods, namely **One Vs. Rest** and **One Vs. One**, are employed to classify the data. 
+The "**decision_function_shape**" parameter is set accordingly. Here are the classification results obtained for each method
 ### One Vs. Rest
 | Result | Kernel = Linear | Kernel = Poly | Kernel = RBF |
 | --- | --- | --- | --- |
