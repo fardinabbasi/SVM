@@ -9,9 +9,9 @@ $$K(X_1, X_2) = X_1^TX_2$$
 Below are the classification results using the **linear kernel**, first with the features Sepal Length & Sepal Width, and then with the features Petal Length & Petal Width.
 | Result | Sepal Length & Sepal Width | Petal Length & Petal Width |
 | --- | --- | --- |
-| Decision Regions | <img src="/readme_images/s_p.png"> | <img src="/readme_images/p_p.png"> |
-| Confusion Matrix | <img src="/readme_images/s_c.png"> | <img src="/readme_images/p_c.png"> |
-| Classification Report | <img src="/readme_images/s_r.jpg"> | <img src="/readme_images/p_r.jpg"> |
+| Decision Regions | <img src="./doc/s_p.png"> | <img src="./doc/p_p.png"> |
+| Confusion Matrix | <img src="./doc/s_c.png"> | <img src="./doc/p_c.png"> |
+| Classification Report | <img src="./doc/s_r.jpg"> | <img src="./doc/p_r.jpg"> |
 
 Based on the results obtained using the petal length & petal width features, where datapoints exhibit **linear separability**, the classification performance is notably impressive.
 ### Poly and RBF Kernel
@@ -25,8 +25,8 @@ $$K(X_1, X_2) = (X_1^TX_2+a)^b$$
 Below are the classification results using the **poly and RBF kernel** with all 4 features.
 | Result | Kernel = Poly | Kernel = RBF |
 | --- | --- | --- |
-| Confusion Matrix | <img src="/readme_images/poly_c.png"> | <img src="/readme_images/rbf_c.png"> |
-| Classification Report | <img src="/readme_images/rbf_r.jpg"> | <img src="/readme_images/rbf_r.jpg"> |
+| Confusion Matrix | <img src="./doc/poly_c.png"> | <img src="./doc/rbf_c.png"> |
+| Classification Report | <img src="./doc/rbf_r.jpg"> | <img src="./doc/rbf_r.jpg"> |
 
 ## Hyperparameter Tuning
 The optimization function for **Soft SVM** is written as follows:
@@ -75,13 +75,13 @@ The "[decision_function_shape](https://scikit-learn.org/stable/modules/generated
 ### One Vs. Rest
 | Result | Kernel = Linear | Kernel = Poly | Kernel = RBF |
 | --- | --- | --- | --- |
-| Confusion Matrix | <img src="/readme_images/or_linear_c.png"> | <img src="/readme_images/or_poly_c.png"> | <img src="/readme_images/or_rbf_c.png"> |
-| Classification Report | <img src="/readme_images/or_linear_r.jpg"> | <img src="/readme_images/or_poly_r.jpg"> | <img src="/readme_images/or_rbf_r.jpg"> |
+| Confusion Matrix | <img src="./doc/or_linear_c.png"> | <img src="./doc/or_poly_c.png"> | <img src="./doc/or_rbf_c.png"> |
+| Classification Report | <img src="./doc/or_linear_r.jpg"> | <img src="./doc/or_poly_r.jpg"> | <img src="./doc/or_rbf_r.jpg"> |
 
 ### One Vs. One
 | Result | Kernel = Linear | Kernel = Poly | Kernel = RBF |
 | --- | --- | --- | --- |
-| Confusion Matrix | <img src="/readme_images/oo_linear_c.png"> | <img src="/readme_images/oo_poly_c.png"> | <img src="/readme_images/oo_rbf_c.png"> |
-| Classification Report | <img src="/readme_images/oo_linear_r.jpg"> | <img src="/readme_images/oo_poly_r.jpg"> | <img src="/readme_images/oo_rbf_r.jpg"> |
+| Confusion Matrix | <img src="./doc/oo_linear_c.png"> | <img src="./doc/oo_poly_c.png"> | <img src="./doc/oo_rbf_c.png"> |
+| Classification Report | <img src="./doc/oo_linear_r.jpg"> | <img src="./doc/oo_poly_r.jpg"> | <img src="./doc/oo_rbf_r.jpg"> |
 
 In this particular problem, the One Vs. One method exhibits slightly better classification performance.
