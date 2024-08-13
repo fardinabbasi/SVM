@@ -85,3 +85,8 @@ The "[decision_function_shape](https://scikit-learn.org/stable/modules/generated
 | Classification Report | <img src="./doc/oo_linear_r.jpg"> | <img src="./doc/oo_poly_r.jpg"> | <img src="./doc/oo_rbf_r.jpg"> |
 
 In this particular problem, the One Vs. One method exhibits slightly better classification performance.
+## Course Description
+- **Course**: Machine Learning [ECE 501]
+- **Semester**: Spring 2023
+- **Institution:** [School of Electrical & Computer Engineering](https://ece.ut.ac.ir/en/), [College of Engineering](https://eng.ut.ac.ir/en), [University of Tehran](https://ut.ac.ir/en)
+- **Instructors:** Dr. A. Dehaqani, Dr. Tavassolipour
